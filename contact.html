@@ -1,225 +1,543 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | PL Softtech Solutions</title>
-    <meta name="description" content="Contact PL Softtech Solutions for software development, cloud solutions, AI services and digital transformation projects.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-<!-- =====================================
-     HEADER
-===================================== -->
-<header>
-    <div class="container navbar">
-        <a href="index.html" class="logo">
-            PL<span>Softtech</span>
-        </a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="technologies.html" class="active">Technologies</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- <a href="#contact-form" class="btn">
-            Contact Now
-        </a> -->
-    </div>
-         <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </div>
-</header>
-<!-- =====================================
-     HERO
-===================================== -->
-<section class="hero" style="min-height:60vh;">
-    <div class="container">
-        <div class="hero-content text-center reveal">
-            <span class="hero-badge">
-                Let's Talk
-            </span>
-            <h1>
-                Start Your Next
-                <span>Digital Project</span>
-            </h1>
-            <p>
-                Tell us about your project, business goals and technology requirements.
-            </p>
-        </div>
-    </div>
-</section>
-<!-- =====================================
-     CONTACT INFO
-===================================== -->
-<section>
-    <div class="container">
-        <div class="card-grid">
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <h3>Email Us</h3>
-                <p>hr@plsofttech.com</p>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fa-solid fa-phone"></i>
-                </div>
-                <h3>Call Us</h3>
-                <p>+91 73583 86560</p>
-            </div>
-            <div class="card reveal">
-                <div class="service-icon">
-                    <i class="fa-solid fa-location-dot"></i>
-                </div>
-                <h3>JM,Complex,Junction,<br>Kappukadu.</h3>
-                <p>Tamil Nadu, India</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- =====================================
-     CONTACT FORM
-===================================== -->
-<section class="light-section" id="contact-form">
-    <div class="container">
-        <div class="section-title reveal">
-            <h2>Send Us A Message</h2>
-            <p>
-                Fill out the form and our team will get back to you shortly.
-            </p>
-            <div class="section-divider"></div>
-        </div>
-        <form class="contact-form reveal" id="contactForm">
-            <div class="form-row">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email Address" required>
-            </div>
-            <div class="form-row">
-                <input type="tel" id="phone" placeholder="Phone Number">
-                <input type="text" id="company" placeholder="Company Name">
-            </div>
-            <input type="text" id="subject" placeholder="Project Subject" required style="margin-bottom: 20px;">
-            <textarea rows="8" id="message" placeholder="Tell us about your project..." required style="margin-bottom: 20px;"></textarea>
-            <button type="submit" class="btn">
-                Send Message
-            </button>
-        </form>
-    </div>
-</section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact Us | PL Softtech Solutions</title>
+		<meta
+			name="description"
+			content="Contact PL Softtech Solutions for software development, web, mobile, cloud and AI projects. Reach us by phone, email or the contact form."
+		/>
+		<link rel="icon" type="image/png" href="images/pl-logo.jpeg" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/theme.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/pl.png" alt="PL Softtech Solutions logo" />
+					<span class="brand-name">PL Softtech<span>Solutions</span></span>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navMenu"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navMenu">
+					<ul class="navbar-nav align-items-lg-center gap-lg-2">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item">
+							<a class="nav-link" href="services.html">Services</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+						<li class="nav-item">
+							<a class="nav-link active" href="contact.html">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-cta" href="#contact-form">Get In Touch</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
+		<section class="hero hero-sub" style="min-height: 48vh !important">
+			<div class="hero-mark"></div>
+			<div class="container text-center">
+				<span class="eyebrow reveal">Let's Talk</span>
+				<h1 class="mt-4 reveal reveal-delay-1">
+					Start Your Next <span class="marked">Digital Project</span>
+				</h1>
+				<p class="lead mx-auto reveal reveal-delay-2">
+					Tell us about your project, timeline and goals — we'll reply within one business
+					day.
+				</p>
+			</div>
+		</section>
 
-<!-- =====================================
-     GOOGLE MAP
-===================================== -->
-<section>
-    <div class="container">
-        <div class="section-title reveal">
-            <h2>Our Location</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="map-container reveal">
-            <iframe src="https://maps.google.com/maps?q=PL%20Softtech%20Solutions&z=15&output=embed" width="100%" height="450" style="border:0;border-radius:20px;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-</section>
-<!-- =====================================
-     FAQ
-===================================== -->
-<section class="light-section">
-    <div class="container">
-        <div class="section-title reveal">
-            <h2>Frequently Asked Questions</h2>
-            <div class="section-divider"></div>
-        </div>
-        <div class="card-grid">
-            <div class="card reveal">
-                <h3>How soon will you respond?</h3>
-                <p>Usually within 24 hours.</p>
-            </div>
-            <div class="card reveal">
-                <h3>Do you work internationally?</h3>
-                <p>Yes, we serve clients globally.</p>
-            </div>
-            <div class="card reveal">
-                <h3>Can you sign an NDA?</h3>
-                <p>Absolutely. Client confidentiality is important to us.</p>
-            </div>
-            <div class="card reveal">
-                <h3>Do you provide support?</h3>
-                <p>Yes, we offer maintenance and long-term support plans.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- =====================================
-     CTA
-===================================== -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content reveal">
-            <h2>Ready To Build Something Great?</h2>
-            <p>
-                Let's create innovative software solutions that help your business grow.
-            </p>
-            <a href="mailto:hr@plsofttech.com" class="btn cta-btn">
-                        Email Us Now
-                         </a>
-        </div>
-    </div>
-</section>
-<!-- =====================================
-     FOOTER
-===================================== -->
-<footer>
-    <div class="container footer-container">
-        <div>
-            <h2>PL Softtech Solutions</h2>
-            <p>
-                Empowering businesses through technology, innovation and digital transformation.
-            </p>
-        </div>
-        <div>
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="technologies.html">Technologies</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div>
-            <h3>Contact</h3>
-            <p>hr@plsofttech.com</p>
-            <p>+91 7358386560</p>
-            <p>JM,Complex,Junction,Kappukadu.</p>
-        </div>
-        <div>
-            <h3>Follow Us</h3>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-x-twitter"></i></a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="footer-bottom">
-            <p>
-                © 2026 PL Softtech Solutions. All Rights Reserved.
-            </p>
-        </div>
-    </div>
-</footer>
-<script src="js/animation.js"></script>
-</body>
+		<div class="hazard-rule thin"></div>
+
+		<!-- CONTACT INFO CARDS -->
+		<section class="pt-0">
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-md-4 reveal">
+						<div class="brand-card contact-info-card">
+							<div class="service-icon"><i class="fa-solid fa-envelope"></i></div>
+							<h3>Email Us</h3>
+							<p>hr@plsofttech.com</p>
+						</div>
+					</div>
+					<div class="col-md-4 reveal reveal-delay-1">
+						<div class="brand-card contact-info-card">
+							<div class="service-icon"><i class="fa-solid fa-phone"></i></div>
+							<h3>Call Us</h3>
+							<p>+91 73583 86560</p>
+						</div>
+					</div>
+					<div class="col-md-4 reveal reveal-delay-2">
+						<div class="brand-card contact-info-card">
+							<div class="service-icon"><i class="fa-solid fa-location-dot"></i></div>
+							<h3>Visit Us</h3>
+							<p>JM Complex, Junction, Kappukadu, Tamil Nadu, India</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACT FORM -->
+		<section class="section-alt" id="contact-form">
+			<div class="container">
+				<div class="row g-5 align-items-start">
+					<div class="col-lg-7 reveal">
+						<span class="eyebrow">Get In Touch</span>
+						<h2 class="mt-3">Send Us A Message</h2>
+						<p class="mt-3">
+							Fill out the form and our team will get back to you shortly.
+						</p>
+
+						<form class="brand-form mt-4" id="contactForm">
+							<div class="row">
+								<div class="col-md-6">
+									<input
+										type="text"
+										class="form-control"
+										name="entry.111111111"
+										placeholder="Full Name"
+										required
+									/>
+								</div>
+								<div class="col-md-6">
+									<input
+										type="email"
+										class="form-control"
+										name="entry.222222222"
+										placeholder="Email Address"
+										required
+									/>
+								</div>
+								<div class="col-md-6">
+									<input
+										type="tel"
+										class="form-control"
+										name="entry.333333333"
+										placeholder="Phone Number"
+									/>
+								</div>
+								<div class="col-md-6">
+									<input
+										type="text"
+										class="form-control"
+										name="entry.444444444"
+										placeholder="Company Name"
+									/>
+								</div>
+								<div class="col-12">
+									<input
+										type="text"
+										class="form-control"
+										name="entry.555555555"
+										placeholder="Project Subject"
+										required
+									/>
+								</div>
+								<div class="col-12">
+									<textarea
+										rows="6"
+										class="form-control"
+										name="entry.666666666"
+										placeholder="Tell us about your project..."
+										required
+									></textarea>
+								</div>
+							</div>
+							<button
+								type="submit"
+								class="btn-brand w-100 justify-content-center mt-2"
+								id="submitBtn"
+							>
+								Send Message <i class="fa-solid fa-paper-plane"></i>
+							</button>
+							<p id="formMsg" class="text-center mt-3" style="display: none"></p>
+						</form>
+					</div>
+
+					<div class="col-lg-5 reveal reveal-delay-1">
+						<div class="brand-card">
+							<span class="eyebrow">Business Hours</span>
+							<h3 class="mt-3 mb-3">When We're Available</h3>
+							<div class="d-flex justify-content-between mb-2">
+								<span style="color: var(--dark-gray); font-weight: 600"
+									>Monday – Friday</span
+								><span class="text-muted">10:00 AM – 600 PM</span>
+							</div>
+							<div class="d-flex justify-content-between mb-2">
+								<span style="color: var(--dark-gray); font-weight: 600"
+									>Saturday</span
+								><span class="text-muted">10:00 AM – 3:00 PM</span>
+							</div>
+							<div class="d-flex justify-content-between mb-4">
+								<span style="color: var(--dark-gray); font-weight: 600">Sunday</span
+								><span class="text-muted">Closed</span>
+							</div>
+							<hr style="border-color: var(--line)" />
+							<p class="mt-3 mb-2" style="font-weight: 600; color: var(--dark-gray)">
+								Follow Us
+							</p>
+							<div>
+								<a
+									href="#"
+									class="social-circle"
+									style="border-color: var(--line); color: var(--black)"
+									aria-label="LinkedIn"
+									><i class="fab fa-linkedin-in"></i
+								></a>
+								<a
+									href="#"
+									class="social-circle"
+									style="border-color: var(--line); color: var(--black)"
+									aria-label="Facebook"
+									><i class="fab fa-facebook-f"></i
+								></a>
+								<a
+									href="#"
+									class="social-circle"
+									style="border-color: var(--line); color: var(--black)"
+									aria-label="Instagram"
+									><i class="fab fa-instagram"></i
+								></a>
+								<a
+									href="#"
+									class="social-circle"
+									style="border-color: var(--line); color: var(--black)"
+									aria-label="X (Twitter)"
+									><i class="fab fa-x-twitter"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MAP -->
+		<section>
+			<div class="container">
+				<div class="text-center mx-auto reveal" style="max-width: 700px">
+					<span class="eyebrow">Find Us</span>
+					<h2 class="mt-3">Our Location</h2>
+					<div class="brand-divider center"></div>
+				</div>
+				<div class="map-frame mt-4 reveal">
+					<iframe
+						src="https://maps.google.com/maps?q=PL%20Softtech%20Solutions&z=15&output=embed"
+						width="100%"
+						height="420"
+						style="border: 0; display: block"
+						allowfullscreen=""
+						loading="lazy"
+						title="PL Softtech Solutions location map"
+					></iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section class="section-alt">
+			<div class="container">
+				<div class="text-center mx-auto reveal" style="max-width: 700px">
+					<span class="eyebrow">Questions</span>
+					<h2 class="mt-3">Frequently Asked Questions</h2>
+					<div class="brand-divider center"></div>
+				</div>
+				<div class="row justify-content-center mt-4">
+					<div class="col-lg-9 reveal">
+						<div class="accordion faq-accordion" id="contactFaq">
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#cfaq1"
+									>
+										How soon will you respond?
+									</button>
+								</h3>
+								<div
+									id="cfaq1"
+									class="accordion-collapse collapse show"
+									data-bs-parent="#contactFaq"
+								>
+									<div class="accordion-body">
+										Usually within one business day. For urgent requests, call
+										us directly.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#cfaq2"
+									>
+										Do you work with clients internationally?
+									</button>
+								</h3>
+								<div
+									id="cfaq2"
+									class="accordion-collapse collapse"
+									data-bs-parent="#contactFaq"
+								>
+									<div class="accordion-body">
+										Yes, we work with clients across time zones and coordinate
+										over video calls and async updates.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#cfaq3"
+									>
+										Can you sign an NDA?
+									</button>
+								</h3>
+								<div
+									id="cfaq3"
+									class="accordion-collapse collapse"
+									data-bs-parent="#contactFaq"
+								>
+									<div class="accordion-body">
+										Absolutely. Client confidentiality is standard practice for
+										us and we're happy to sign before sharing details.
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h3 class="accordion-header">
+									<button
+										class="accordion-button collapsed"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#cfaq4"
+									>
+										Do you offer ongoing support plans?
+									</button>
+								</h3>
+								<div
+									id="cfaq4"
+									class="accordion-collapse collapse"
+									data-bs-parent="#contactFaq"
+								>
+									<div class="accordion-body">
+										Yes, we offer maintenance and long-term support plans for
+										every project we deliver.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA -->
+		<section class="cta-band">
+			<div class="container">
+				<div class="reveal mx-auto" style="max-width: 650px">
+					<h2>Ready To Build Something Great?</h2>
+					<p class="mt-3">
+						Let's create a software solution that helps your business grow.
+					</p>
+					<a href="mailto:hr@plsofttech.com" class="btn-brand mt-3"
+						>Email Us Now <i class="fa-solid fa-arrow-right"></i
+					></a>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div class="row g-4">
+					<div class="col-lg-4">
+						<div class="footer-brand">
+							<img
+								src="images/pl.png"
+								alt="PL Softtech Solutions"
+								class="footer-logo"
+							/><span>PL Softtech<small>Solutions</small></span>
+						</div>
+						<p>
+							A startup software company engineering web, mobile, cloud and AI
+							products for growing businesses.
+						</p>
+						<div class="mt-3">
+							<a href="#" class="social-circle" aria-label="LinkedIn"
+								><i class="fab fa-linkedin-in"></i
+							></a>
+							<a href="#" class="social-circle" aria-label="Facebook"
+								><i class="fab fa-facebook-f"></i
+							></a>
+							<a href="#" class="social-circle" aria-label="Instagram"
+								><i class="fab fa-instagram"></i
+							></a>
+							<a href="#" class="social-circle" aria-label="X (Twitter)"
+								><i class="fab fa-x-twitter"></i
+							></a>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<h5>Quick Links</h5>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="career.html">Career</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<div class="col-6 col-lg-3">
+						<h5>Company</h5>
+						<ul>
+							<li><a href="career.html">Careers</a></li>
+							<li><a href="career.html#internships">Internships</a></li>
+							<li><a href="contact.html">Get A Quote</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<h5>Contact</h5>
+						<p class="mb-1">hr@plsofttech.com</p>
+						<p class="mb-1">+91 73583 86560</p>
+						<p>JM Complex, Junction, Kappukadu, Tamil Nadu, India</p>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2026 PL Softtech Solutions. All Rights Reserved.</span>
+					<span>Engineered with care.</span>
+				</div>
+			</div>
+		</footer>
+
+		<iframe
+			name="hidden_iframe_contact"
+			id="hidden_iframe_contact"
+			style="display: none"
+		></iframe>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/site.js"></script>
+		<script>
+			// ==========================================================
+			// GOOGLE FORM WIRING — replace with your real form's values:
+			// 1. CONTACT_FORM_ACTION_URL -> your form's formResponse URL
+			// 2. Each entry.XXXXXXXXX above -> your real field IDs
+			// ==========================================================
+			const CONTACT_FORM_ACTION_URL =
+				"https://docs.google.com/forms/d/e/YOUR_CONTACT_FORM_ID_HERE/formResponse";
+
+			const cForm = document.getElementById("contactForm");
+			const cBtn = document.getElementById("submitBtn");
+			const cMsg = document.getElementById("formMsg");
+			const cIframe = document.getElementById("hidden_iframe_contact");
+			let cSubmitting = false;
+
+			cForm.addEventListener("submit", function (e) {
+				e.preventDefault();
+				if (cSubmitting) return;
+				cSubmitting = true;
+				cBtn.disabled = true;
+				cBtn.innerHTML = "Sending...";
+				cForm.action = CONTACT_FORM_ACTION_URL;
+				cForm.target = "hidden_iframe_contact";
+				cForm.method = "POST";
+				HTMLFormElement.prototype.submit.call(cForm);
+			});
+
+			cIframe.addEventListener("load", function () {
+				if (!cSubmitting) return;
+				cBtn.disabled = false;
+				cBtn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>';
+				cMsg.style.display = "block";
+				cMsg.style.color = "#171614";
+				cMsg.textContent = "Thank you! Your message has been sent successfully.";
+				cForm.reset();
+				cSubmitting = false;
+			});
+		</script>
+		<script>
+			document.getElementById("contactForm").addEventListener("submit", async (e) => {
+				e.preventDefault();
+
+				const submitBtn = document.getElementById("submitBtn");
+				const formMsg = document.getElementById("formMsg");
+
+				submitBtn.disabled = true;
+				formMsg.style.display = "none";
+
+				const payload = {
+					full_name: document.querySelector('[name="entry.111111111"]').value,
+					email: document.querySelector('[name="entry.222222222"]').value,
+					phone: document.querySelector('[name="entry.333333333"]').value,
+					company: document.querySelector('[name="entry.444444444"]').value,
+					subject: document.querySelector('[name="entry.555555555"]').value,
+					message: document.querySelector('[name="entry.666666666"]').value,
+				};
+
+				try {
+					const response = await fetch("http://localhost:8000/api/email-form/open-form/", {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify(payload),
+					});
+
+					const data = await response.json();
+
+					formMsg.style.display = "block";
+
+					if (response.ok) {
+						formMsg.className = "text-success text-center mt-3";
+						formMsg.textContent = data.message || "Message sent successfully!";
+						document.getElementById("contactForm").reset();
+					} else {
+						formMsg.className = "text-danger text-center mt-3";
+						formMsg.textContent = data.message || "Failed to send message.";
+					}
+				} catch (error) {
+					console.error(error);
+
+					formMsg.style.display = "block";
+					formMsg.className = "text-danger text-center mt-3";
+					formMsg.textContent = "Unable to connect to the server.";
+				} finally {
+					submitBtn.disabled = false;
+				}
+			});
+		</script>
+	</body>
 </html>
